@@ -1,11 +1,8 @@
 {
   "name": "gulp-kulerthemes",
-  "version": "1.0.3",
+  "version": "1.0.6",
   "description": "Gulpfile for kulerthemes",
   "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
   "repository": {
     "type": "git",
     "url": "https://github.com/luanvuvt/node-gulp-kulerthemes"
@@ -14,7 +11,9 @@
     "gulp",
     "kulerthemes"
   ],
-  "author": "luanvuvt@gmail.com",
+  "author": {
+    "name": "luanvuvt@gmail.com"
+  },
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/luanvuvt/node-gulp-kulerthemes/issues"
@@ -33,5 +32,6 @@
     "glob": "4.0.3",
     "bs-snippet-injector": "0.0.7",
     "q": "^1.0.1"
-  }
+  },
+  "readme": "ERROR: No README data found!"
 }

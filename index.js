@@ -145,7 +145,8 @@ module.exports = function (gulp) {
 						var themePath = path.join(packagePath, 'Theme_v' + themeSettings['themeVersion']);
 
 						themeSettings['opencarts'].forEach(function (opencart) {
-							var opencartPath = path.join(themePath, opencart['name']);
+							var opencartPath = path.join(themePath, opencart['name']),
+								branch = opencart['theme_path'].replace('/build', '');
 
 							var itemDefer = Q.defer();
 
@@ -158,7 +159,7 @@ module.exports = function (gulp) {
 								});
 
 							opencart['module_paths'].forEach(function (itemPath) {
-								itemPath = path.normalize(process.env.KULER_MODULES_PATH + '/' + itemPath);
+								itemPath = path.normalize(process.env['KULER_MODULES_PATH_' + branch] + '/' + itemPath);
 
 								var itemDefer = Q.defer();
 
